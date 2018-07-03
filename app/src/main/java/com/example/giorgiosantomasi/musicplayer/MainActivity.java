@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view, int index) {
                 playAudio(index);
-                ((ImageView)lv.findViewById(R.id.button_icon)).setImageResource(R.drawable.icons_pause);
+                ((ImageView)lv.findViewById(R.id.button_icon)).setImageResource(R.drawable.iconspause);
             }
         }));
 
