@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.giorgiosantomasi.musicplayer.MainActivity">
@@ -25,9 +26,10 @@
 
 
     <android.support.v7.widget.RecyclerView
+        android:layout_weight="0.1"
         android:id="@+id/wlv"
         android:layout_width="match_parent"
-        android:layout_height="750px"
+        android:layout_height="match_parent"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:layout_below="@+id/toolbar"
@@ -35,11 +37,11 @@
 
 
     <LinearLayout
+        android:layout_weight="0.4"
         android:id="@+id/contoller"
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="bottom"
         android:background="@color/black"
         android:layout_below="@+id/wlv">
         <TextView
@@ -63,4 +65,4 @@
     </LinearLayout>
 
 
-</RelativeLayout>
+</LinearLayout>
