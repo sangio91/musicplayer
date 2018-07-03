@@ -27,12 +27,40 @@
     <android.support.v7.widget.RecyclerView
         android:id="@+id/wlv"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="750px"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:layout_below="@+id/toolbar"
         />
 
+
+    <LinearLayout
+        android:id="@+id/contoller"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:background="@color/black"
+        android:layout_below="@+id/wlv">
+        <TextView
+            android:id="@+id/playing_song"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:layout_gravity="center_vertical"
+            android:text="Artista - Titolo"
+            android:textColor="@color/white"
+            android:paddingLeft="20px"
+            android:textSize="22dp"
+            android:fontFamily="@font/quicksand_regular"/>
+        <ImageView
+            android:id="@+id/contoller_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/iconspausewhite"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.3"/>
+    </LinearLayout>
 
 
 </RelativeLayout>
